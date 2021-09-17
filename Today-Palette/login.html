@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>오늘, 팔레트</title>
+<!-- login과 signup부분의 스타일 시트를 외부 css문서로 작성 -->
+<link href="login_box_style.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+/* 하이퍼링크의 기존 색상과 하이퍼링크를 방문한 후의 색상을 회색으로 설정 */
+a:link {
+	color: #777777;
+	text-decoration: none;
+}
+a:visited {
+	color: #777777;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+
+<!-- 웹페이지의 배경 색상 설정 -->
+<body bgcolor="#E7EBEF">
+<!-- 시맨틱 태그중 header태그를 이용하여 머리말 구성 -->
+<header class="login_header">
+  <!-- logo_locate로 머리말 부분의 로고의 위치 설정, 로고 누르면 첫 화면으로 이동 -->
+  <div class="logo_locate"><a href="index.html"><img src="img/logo.png" width="300" height="89" alt=""/></a></div>
+</header>
+<!-- 시맨틱 태그중 section태그를 이용, 박스 위치 설정 -->
+<section class="login_box">
+  <!--  form태그 사용, method속성에서 보안을 위해 post방식으로 데이터 전송 -->
+  <form id="form1" name="form1" method="post">
+	<!-- login_box_locate 클래스 선택자를 이용해 로그인 박스의 위치 설정 -->
+    <div class="login_box_loacte">
+	  <!-- <input>태그의 text, password 속성을 이용해 입력 양식 생성 -->
+      <p>
+        <label for="아이디">아이디:</label>
+        <input name="아이디" type="text" id="아이디" size="32" maxlength="30">
+      </p>
+      <p>
+        <label for="비밀번호">비밀번호:</label>
+        <input name="비밀번호" type="password" id="비밀번호" size="30" maxlength="30">
+        <br>
+        <br>
+      </p>
+      <p>
+		<!-- 이미지 버튼 생성, <input>태그의 submit 속성을 이용해 입력 양식 생성 -->
+        <input name="submit" type="image" id="submit" src="img/login.png" width="300" height="55">
+      </p>
+	  <!-- 수평선 생성 -->
+      <hr>
+	  <!-- 글자를 누르면 회원가입 웹페이지로 이동 -->
+      <p>
+		  <a href="signup.html">회원가입</a></p>
+    </div>
+  </form>
+</section>
+<!-- 시맨틱 태그 중 footer태그를 사용하여 꼬리말 설정, footer_bottom02 클래스 선택자로 글자의 위치 설정 -->
+<footer class="footer_bottom02">COPYRIGHT 2020 YOON. ALL RIGHTS RESERVED.</footer>
+</body>
+</html>

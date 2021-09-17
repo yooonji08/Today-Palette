@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* section부분의 이미지 배치를 위한 상자, 상자의 높이와 너비, 위치 설정 */
+.showcolor_box {
+	height: 440px;
+	width: 600px;
+	margin-left: 200px;
+	float: left;
+	margin-top: 100px;
+}
+/* 게시글 둘러보기 박스, 배경색 설정, 오른쪽 아래만 둥근 모서리 적용, 그림자 적용, 그림자의 흐림, 확산 효과와 색상 설정 */
+.letgo_box {
+	height: 150px;
+	width: 400px;
+	float: left;
+	margin-left: 50px;
+	padding-top: 30px;
+	background-color: #E4E2E2;
+	padding-left: 30px;
+	margin-top: 150px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 0px;
+	font-size: 18px;
+	-webkit-box-shadow: 3px 3px 3px 3px #989898;
+	box-shadow: 3px 3px 3px 3px #989898;
+}
+/* 게시글 작성하러가기 박스, 배경색 설정, 오른쪽 아래만 둥근 모서리 적용, 그림자 적용, 그림자의 흐림, 확산 효과와 색상 설정 */
+.mynote_box {
+	height: 150px;
+	width: 400px;
+	float: left;
+	margin-left: 50px;
+	margin-top: 30px;
+	padding-top: 30px;
+	padding-left: 30px;
+	font-size: 18px;
+	background-color: #FFEDB1;
+	border-bottom-right-radius: 20px;
+	-webkit-box-shadow: 3px 3px 3px 3px #B9B28D;
+	box-shadow: 3px 3px 3px 3px #B9B28D;
+}

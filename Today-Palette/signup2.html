@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>무제 문서</title>
+<!-- login과 signup부분의 스타일 시트를 외부 css문서로 작성 -->
+<link href="login_box_style.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- 웹페이지의 배경 색상 설정 -->
+<body bgcolor="#E7EBEF">
+<!-- 시맨틱 태그중 header태그를 이용하여 머리말 구성 -->
+<header class="login_header">
+  <!-- logo_locate로 머리말 부분의 로고의 위치 설정, 로고 누르면 첫 화면으로 이동 -->
+  <div class="logo_locate"><a href="index.html"><img src="img/logo.png" width="300" height="89" alt=""/></a></div>
+</header>
+<!-- 시맨틱 태그중 section태그를 이용, 박스 위치 설정 -->
+<section class="login_box">
+  <!--  form태그 사용, method속성에서 보안을 위해 post방식으로 데이터 전송 -->
+  <form method="post" enctype="multipart/form-data" name="form1" id="form1">
+	<!-- login_box_locate 클래스 선택자를 이용해 회원가입 박스의 위치 설정 -->
+    <div class="login_box_loacte">
+      <p>
+		<!-- <input>태그의 text, password 속성을 이용해 아이디, 비밀번호, 비밀번호 재확인 입력 양식 생성 -->
+        <label for="아이디">아이디:</label>
+        <input name="아이디" type="text" id="아이디" size="30" maxlength="30">
+        <br>
+      </p>
+      <p>
+        <label for="password_01">비밀번호:</label>
+        <input name="password_01" type="password" id="password_01" size="30" maxlength="30">
+        <br>
+      </p>
+      <p>
+        <label for="password_02">비밀번호 재확인:</label>
+        <input name="password_02" type="password" id="password_02">
+        <br>
+        <br>
+      </p>
+      <p>
+		<!-- <input>태그의 text, date 속성을 이용해 이름, 생년월일 입력 양식 생성 -->
+        <label for="name">이름:</label>
+        <input name="name" type="text" id="name" size="30" maxlength="30">
+        <br>
+      </p>
+      <p>
+        <label for="date">생년월일:</label>
+        <input type="date" name="date" id="date">
+        <br>
+      </p>
+	  <!-- 라디오 버튼 적용, <input>태그의 radio 속성을 이용해 입력 양식 생성, 남자와 여자중 하나만 선택되도록 name을 woman으로 통일 -->
+      <p>성별: 
+        <input type="radio" name="woman" id="radio" value="woman">
+        여자
+        <input type="radio" name="woman" id="radio2" value="man">
+        남자
+        <br>
+      </p>
+      <p>
+		<!-- <input>태그의 email, tel, file, submit 속성을 이용해 이메일, 휴대전화, 프로필 업로드 입력 양식 생성 -->
+        <label for="email">이메일<span style="font-size: 12px">(선택)</span>:</label>
+        <input name="email" type="email" id="email" size="40" maxlength="40">
+        <br>
+      </p>
+      <p>
+        <label for="tel">휴대전화:</label>
+        <input name="tel" type="tel" id="tel" size="30" maxlength="30">
+        <br>
+      </p>
+      <p>
+        <label for="photo">프로필 업로드:</label>
+        <input type="file" name="photo" id="photo">
+        <br>
+        <br>
+		<!-- 이미지 버튼 생성, <input>태그의 submit 속성을 이용해 입력 양식 생성 -->
+        <input name="submit" type="image" id="submit" src="img/signup.png" width="300" height="55">
+        <br>
+      </p>
+    </div>
+  </form>
+</section>
+<!-- 시맨틱 태그 중 footer태그를 사용하여 꼬리말 설정, footer_bottom02 클래스 선택자로 글자의 위치 설정 -->
+<footer class="footer_bottom02">COPYRIGHT 2020 YOON. ALL RIGHTS RESERVED.</footer>
+</body>
+</html>
